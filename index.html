@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <aside>
+        <h3>Sua Última Jogada:</h3>
+        <button class="suaJogada">&#x1F44A</button>
+    </aside>
+
+    <main class="container">
+
+        <h1>JokenPô</h1>
+
+        <section>
+            <button id="pedra" onclick="playHuman(`pedra`)">&#x1F44A</button>
+            <button id="papel" onclick="playHuman(`papel`)">&#x1f590</button>
+            <button id="tesoura" onclick="playHuman(`tesoura`)">&#x270c</button>
+        </section>
+        <p class="result"></p>
+
+        <p>Sua Pontuação: <span class="span1">0</span></p>
+        <p>Pontuação da Alexa: <span class="span2">0</span></p>
+
+    </main>
+
+    <aside class="aside2">
+        <h3>Última Jogada da Alexa:</h3>
+        <button class="alexaJogada">&#x1F44A</button>
+    </aside>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
