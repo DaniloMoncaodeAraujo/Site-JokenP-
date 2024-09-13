@@ -37,6 +37,7 @@ aside {
         font-size: 200%;
         font-weight: 400;
         color: blue;
+        display: inline;
     }
 
     button {
