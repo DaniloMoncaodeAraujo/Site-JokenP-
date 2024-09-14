@@ -2,10 +2,10 @@ const resultado = document.querySelector('.result')
 const minhaPontuação = document.querySelector('.span1')
 const alexaPontuação = document.querySelector('.span2')
 
-const GAME_OPTIONS ={
-PEDRA: 'pedra',
-PAPEL: 'papel',
-TESOURA: 'tesoura'
+const GAME_OPTIONS = {
+   PEDRA: 'pedra',
+   PAPEL: 'papel',
+   TESOURA: 'tesoura'
 }
 //Minha jogada!
 const playHuman = (humanChoice) => {
@@ -27,27 +27,28 @@ const playMachine = () => {
 const playthegame = (human, machine) => {
 
    if (human === machine) {
-      resultado.innerHTML = 'Deu Empate😐!'
-      resultado.style.color = '#A9A9A9'
-      resultado.style.fontSize = '250%'
+      setTimeout(function () {
+         resultado.innerHTML = 'Deu Empate😐!'
+         resultado.style.color = '#A9A9A9'
+      }, 150);
 
    } else if ((human == GAME_OPTIONS.PEDRA && machine == GAME_OPTIONS.TESOURA) ||
       (human == GAME_OPTIONS.TESOURA && machine == GAME_OPTIONS.PAPEL) ||
       (human == GAME_OPTIONS.PAPEL && machine == GAME_OPTIONS.PEDRA)) {
-
-      MinhaPontuaçãoNumber++
-      MinhaPontuação.innerHTML = MinhaPontuaçãoNumber
-      resultado.innerHTML = 'Você Ganhou😎!'
-      resultado.style.color = '#0000ff'
-      resultado.style.fontSize = '250%'
+      setTimeout(function () {
+         MinhaPontuaçãoNumber++
+         MinhaPontuação.innerHTML = MinhaPontuaçãoNumber
+         resultado.innerHTML = 'Você Ganhou😎!'
+         resultado.style.color = '#0000ff'
+      }, 150);
 
    } else {
-      AlexaPontuaçãoNumber++
-      alexaPontuação.innerHTML = AlexaPontuaçãoNumber
-      resultado.innerHTML = 'Você Perdeu😢!'
-      resultado.style.color = '#FF0000'
-      resultado.style.fontSize = '250%'
-
+      setTimeout(function () {
+         AlexaPontuaçãoNumber++
+         alexaPontuação.innerHTML = AlexaPontuaçãoNumber
+         resultado.innerHTML = 'Você Perdeu😢!'
+         resultado.style.color = '#FF0000'
+      }, 150);
    }
 
 }
