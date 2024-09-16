@@ -19,5 +19,7 @@ Divirta-se com este projeto de jogo de Pedra, Papel e Tesoura, desenvolvido com 
      
      🎮 Experiência de jogo envolvente
 
-![image](https://github.com/user-attachments/assets/e4781dee-1caf-45c5-8b26-25e249fe118f)
+![image](https://github.com/user-attachments/assets/aaeaff12-6c6e-4cd3-8503-0d58ce5e7833)
+
+
 
